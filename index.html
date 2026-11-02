@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8eee9">
+  <title>Hania Jewels | Everyday Elegance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+  <div id="introScreen" class="intro-screen" aria-label="Hania Jewels introduction">
+    <div class="intro-glow"></div>
+    <div class="intro-brand-lockup">
+      <span class="intro-side-icon" aria-hidden="true">✧</span>
+      <h1>HANIA <span>JEWELS</span></h1>
+      <span class="intro-side-icon intro-side-icon-right" aria-hidden="true">✧</span>
+    </div>
+    <p class="intro-art-line">ARTS JEWELLERY</p>
+    <p class="intro-caption">A little sparkle, every day.</p>
+    <div class="intro-line"></div>
+  </div>
+
+  <main id="locationScreen" class="location-screen hidden">
+    <div class="location-card">
+      <div class="location-pin" aria-hidden="true">⌖</div>
+      <p class="eyebrow">WELCOME TO HANIA JEWELS</p>
+      <h1>Choose your Karachi location</h1>
+      <p class="muted">Please select your area before entering the store.</p>
+      <label for="locationSelect" class="form-label mt-3">Your delivery area</label>
+      <select id="locationSelect" class="form-select" required>
+        <option value="">Select your area</option>
+        <optgroup label="Karachi Central">
+          <option>Gulberg</option><option>Federal B Area</option><option>Liaquatabad</option><option>Nazimabad</option><option>New Karachi</option><option>North Nazimabad</option><option>New Nazimabad</option><option>Azizabad</option><option>Karimabad</option><option>Aisha Manzil</option><option>Ancholi</option><option>Nasirabad</option><option>Yaseenabad</option><option>Water Pump</option><option>Shafeeq Mill Colony</option><option>Rizvia Society</option><option>Firdous Colony</option><option>Super Market</option><option>Dak Khana</option><option>Qasimabad</option><option>Bandhani Colony</option><option>Sharifabad</option><option>Mujahid Colony</option><option>Abbasi Shaheed</option><option>Paposh Nagar</option><option>Pahar Ganj</option><option>Haidery</option><option>Sakhi Hasan</option><option>Farooq-e-Azam</option><option>Shadman Town</option><option>Buffer Zone</option><option>Godhra</option><option>Abu Zar Ghaffari</option><option>Khawaja Ajmer Nagri</option><option>Gulshan-e-Saeed</option>
+        </optgroup>
+        <optgroup label="Karachi East">
+          <option>Ferozabad</option><option>Gulshan-e-Iqbal</option><option>Gulzar-e-Hijri</option><option>Jamshed Quarters</option><option>Faisal Cantonment</option><option>PECHS I</option><option>PECHS II</option><option>PECHS</option><option>Bahadurabad</option><option>Tariq Road</option><option>Karsaz</option><option>PIB Colony</option><option>Essa Nagri</option><option>Gillani Railway Station</option><option>Shanti Nagar</option><option>Jamil Colony</option><option>Pehlwan Goth</option><option>Metroville</option><option>Safoora Goth</option><option>Mehmoodabad</option><option>Akhtar Colony</option><option>Manzoor Colony</option><option>Azam Basti</option><option>Chanesar Goth</option><option>Soldier Bazaar</option><option>Pakistan Quarters</option><option>Jut Line</option><option>Jacob Lines</option><option>Garden East</option><option>Delhi Mercantile Society</option><option>Civic Centre</option><option>Shahrah-e-Faisal</option><option>University Road</option><option>Gulshan-e-Jamal</option><option>Rashid Minhas Road</option>
+        </optgroup>
+        <optgroup label="Karachi South">
+          <option>Aram Bagh</option><option>Civil Lines</option><option>Garden</option><option>Garden West</option><option>Lyari</option><option>Saddar</option><option>Clifton</option><option>Clifton Cantonment</option><option>Defence (DHA) Phase 1</option><option>Defence (DHA) Phase 2</option><option>Defence (DHA) Phase 3</option><option>Defence (DHA) Phase 4</option><option>Defence (DHA) Phase 5</option><option>Defence (DHA) Phase 6</option><option>Defence (DHA) Phase 7</option><option>Defence (DHA) Phase 8</option><option>Bath Island</option><option>Boat Basin</option><option>Gizri</option><option>Zamzama</option><option>Defence View</option><option>Frere Town</option><option>Old City Area</option><option>Kharadar</option><option>Mithadar</option><option>Burns Road</option><option>Empress Market</option><option>Agra Taj Colony</option><option>Darya Abad</option><option>Nawabad</option><option>Baghdadi</option><option>Chakiwara</option><option>Behar Colony</option><option>Ragiwara</option><option>Gazdarabad</option><option>Millat Nagar</option><option>Old Haji Camp</option><option>Nanak Wara</option><option>Sultanabad</option>
+        </optgroup>
+        <optgroup label="Karachi West">
+          <option>Manghopir</option><option>Mominabad</option><option>Orangi Town</option><option>Gulshan-e-Ghazi</option><option>Ittehad Town</option><option>Islam Nagar</option><option>Nai Abadi</option><option>Saeedabad</option><option>Muslim Mujahid Colony</option><option>Muhajir Camp</option><option>Rasheedabad</option><option>Haryana Colony</option><option>Hanifabad</option><option>Mohammad Nagar</option><option>Madina Colony (West)</option><option>Ghaziabad</option><option>Chishti Nagar</option><option>Iqbal Baloch Colony</option><option>Ghabool Town</option><option>Data Nagar</option><option>Mujahidabad</option><option>Baloch Goth</option><option>Qasba Colony</option><option>Islamia Colony</option><option>Banaras Colony</option><option>Frontier Colony</option><option>Naya Nazimabad</option><option>Yousuf Goth</option>
+        </optgroup>
+        <optgroup label="Karachi Keamari">
+          <option>Baldia Town</option><option>Harbour Area</option><option>Mauripur</option><option>SITE</option><option>Keamari</option><option>Manora</option><option>Machar Colony</option><option>Bhutta Village</option><option>Gabo Pat</option><option>Shershah</option><option>Pak Colony</option><option>Old Golimar</option><option>Pathan Colony</option><option>Metroville (SITE)</option>
+        </optgroup>
+        <optgroup label="Karachi Korangi">
+          <option>Korangi</option><option>Korangi Industrial Area</option><option>Korangi Creek</option><option>Landhi</option><option>Model Colony</option><option>Shah Faisal</option><option>Bilal Colony</option><option>Nasir Colony</option><option>Chakra Goth</option><option>Mustafa Taj Colony</option><option>100 Quarters</option><option>Gulzar Colony</option><option>Korangi Sector 33</option><option>Zaman Town</option><option>Hasrat Mohani Colony</option><option>Muzaffarabad Colony</option><option>Muslimabad</option><option>Daud Colony</option><option>Moinabad</option><option>Shirafi Goth</option><option>Bhutto Nagar</option><option>Awami Colony</option><option>Burmi Colony</option><option>Sherabad</option><option>Natha Khan Goth</option><option>Pak Sadat Colony</option><option>Drigh Colony</option><option>Reta Plot</option><option>Moria Goth</option><option>Rifah Aam</option><option>Al Falah Society</option>
+        </optgroup>
+        <optgroup label="Karachi Malir">
+          <option>Airport</option><option>Malir</option><option>Malir Cantt</option><option>Bin Qasim</option><option>Gadap</option><option>Ibrahim Hyderi</option><option>Murad Memon Goth</option><option>Shah Mureed</option><option>Jinnah International Airport Area</option><option>Gulshan-e-Hadeed</option><option>Quaidabad</option><option>Rehri</option><option>Cattle Colony</option><option>Saudabad</option><option>Khokhrapar</option><option>Jafar-e-Tayyar</option><option>Gharibabad</option><option>Ghazi Brohi Goth</option><option>Darsano Chano</option><option>Gujro</option><option>Songal</option><option>Maymarabad</option><option>Bahria Town Karachi</option><option>DHA City Karachi</option><option>Port Qasim</option><option>Model Colony (Malir)</option>
+        </optgroup>
+        <option value="__other__">My Karachi area is not listed</option>
+      </select>
+      <input id="otherLocation" class="form-control mt-2 hidden" type="text" maxlength="70" placeholder="Type your Karachi area" aria-label="Type your Karachi area">
+      <p id="locationError" class="error-text" aria-live="polite"></p>
+      <button id="continueBtn" class="btn-gold w-100">Continue to Hania Jewels <span>→</span></button>
+      <small>Your location is required to enter the store and helps us confirm delivery.</small>
+    </div>
+  </main>
+
+  <div id="store" class="hidden">
+    <div class="sparkle-field" id="sparkleField" aria-hidden="true"></div>
+    <div class="announcement">A little sparkle goes a long way <span>✧</span> Karachi delivery available</div>
+    <nav class="navbar navbar-expand-lg site-nav">
+      <div class="container">
+        <a class="navbar-brand brand" href="#" data-page="home"><span class="brand-mark" aria-hidden="true">H<span>✧</span></span><span>HANIA <b>JEWELS</b></span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navLinks">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link active" href="#" data-page="home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-page="products">Categories</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-page="gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-page="offers">Offers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-page="reviews">Reviews</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-page="wishlist">Wishlist <span id="wishCount" class="nav-count">0</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-page="cart">Bag <span id="cartCount" class="nav-count">0</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>✧ Pearls</span><span>✧ Beads</span><span>✧ Charms</span><span>✧ Necklaces</span><span>✧ Bracelets</span><span>✧ Anklets</span><span>✧ Earrings</span><span>✧ Rings</span><span>✧ Pearls</span><span>✧ Beads</span><span>✧ Charms</span><span>✧ Necklaces</span><span>✧ Bracelets</span><span>✧ Anklets</span><span>✧ Earrings</span><span>✧ Rings</span></div></div>
+
+    <div id="page-home" class="page">
+      <section class="hero container-fluid">
+        <div class="hero-copy">
+          <p class="eyebrow">EVERYDAY PIECES, EXTRAORDINARY YOU</p>
+          <h1>Little details.<br><em>Lovely</em> moments.</h1>
+          <p>Discover pearls, playful beads and timeless everyday pieces made to match your mood.</p>
+          <button class="btn-gold" data-page="products">Explore the collection <span>→</span></button>
+        </div>
+        <div class="hero-photo"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1100&q=85" alt="Elegant everyday gold jewellery"></div>
+        <div class="hero-stamp">MADE FOR<br>YOUR EVERYDAY <span>✧</span></div>
+      </section>
+
+      <section class="section-wrap container">
+        <div class="section-heading"><p class="eyebrow">FIND YOUR FAVOURITE</p><h2>Explore by <em>category</em></h2><p>Pick the pieces that match your everyday style.</p></div>
+        <div class="row g-4" id="categoryGrid"></div>
+        <div class="text-center mt-4"><button class="btn-outline-gold" data-page="products">Shop All Categories <span>→</span></button></div>
+      </section>
+
+      <section class="feature-band">
+        <div class="container feature-inner"><div><p class="eyebrow">THE HANIA EDIT</p><h2>A little shine<br>changes everything.</h2><p>From soft pearls to colourful charms, find the pieces that feel like you.</p><button class="btn-outline-gold" data-page="products">Discover your style</button></div><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=85" alt="Minimal gold jewellery styling"></div>
+      </section>
+
+      <section class="section-wrap container">
+        <div class="section-heading"><p class="eyebrow">HANDPICKED FOR YOU</p><h2>Customer <em>favourites</em></h2></div>
+        <div class="row g-4" id="featuredGrid"></div>
+      </section>
+
+      <section id="homeReviews" class="reviews-section">
+        <div class="container"><div class="section-heading"><p class="eyebrow">KIND WORDS</p><h2>Love notes from <em>you</em></h2></div>
+          <div class="row g-4">
+            <div class="col-md-4"><article class="review-card"><div class="stars">★★★★★</div><p>“The pearl necklace is so delicate and pretty. I have worn it almost every day!”</p><b>— Ayesha, Clifton</b></article></div>
+            <div class="col-md-4"><article class="review-card"><div class="stars">★★★★★</div><p>“Loved choosing my own bead colours. The packaging was beautiful too.”</p><b>— Zoya, DHA</b></article></div>
+            <div class="col-md-4"><article class="review-card"><div class="stars">★★★★★</div><p>“Cute, lightweight earrings and lovely quality. Will order again.”</p><b>— Maham, PECHS</b></article></div>
+          </div>
+          <button class="btn-outline-gold mt-4" data-page="reviews">Read & write reviews</button>
+        </div>
+      </section>
+    </div>
+
+    <div id="page-products" class="page hidden">
+      <section class="page-banner"><p class="eyebrow">THE HANIA COLLECTION</p><h1>Find your <em>everyday favourite.</em></h1><p>Thoughtful details, playful colours and a little sparkle.</p></section>
+      <section class="container section-wrap">
+        <div class="shop-tools"><input id="searchInput" class="form-control" placeholder="Search jewellery..." aria-label="Search products"><select id="sortSelect" class="form-select"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
+        <div id="filterBar" class="filter-bar"></div>
+        <div class="row g-4" id="productGrid"></div>
+      </section>
+    </div>
+
+    <div id="page-gallery" class="page hidden">
+      <section class="page-banner compact-banner"><p class="eyebrow">A CLOSER LOOK</p><h1>Our special <em>collection</em></h1><p>Explore the pieces we have handpicked with love.</p></section>
+      <section class="container section-wrap"><div class="row g-4" id="galleryGrid"></div></section>
+    </div>
+
+    <div id="page-offers" class="page hidden">
+      <section class="page-banner offer-banner"><p class="eyebrow">A LITTLE TREAT FOR YOU</p><h1>Lovely finds, <em>lovelier prices.</em></h1><p>Explore special picks and introductory offers.</p></section>
+      <section class="container section-wrap"><div class="offer-card"><span class="offer-tag">WELCOME OFFER</span><h2>10% OFF</h2><p>Enjoy 10% off your first order over Rs. 1,500.</p><small>Offer applies to eligible first orders over Rs. 1,500. Please confirm availability on WhatsApp.</small><button class="btn-gold mt-3" data-page="products">Shop the offer</button></div><div class="row g-4 mt-2" id="offersGrid"></div></section>
+    </div>
+
+    <div id="page-wishlist" class="page hidden"><section class="page-banner compact-banner"><p class="eyebrow">SAVED WITH LOVE</p><h1>Your <em>wishlist</em></h1></section><section class="container section-wrap"><div class="row g-4" id="wishlistGrid"></div><p id="wishlistEmpty" class="empty-state hidden">Your wishlist is waiting for a little sparkle. ♡</p></section></div>
+    <div id="page-cart" class="page hidden"><section class="page-banner compact-banner"><p class="eyebrow">YOUR PICKS</p><h1>Shopping <em>bag</em></h1></section><section class="container section-wrap"><div id="cartItems"></div><div id="cartSummary" class="cart-summary hidden"></div><p id="cartEmpty" class="empty-state">Your bag is empty. Find something lovely!</p></section></div>
+
+    <div id="page-reviews" class="page hidden"><section class="page-banner compact-banner"><p class="eyebrow">YOUR WORDS MATTER</p><h1>Reviews & <em>love notes</em></h1></section><section class="container section-wrap"><div class="row g-4" id="allReviews"></div><div class="write-review"><h2>Share your experience</h2><form id="reviewForm" class="row g-3"><div class="col-md-6"><input class="form-control" id="reviewName" placeholder="Your name" required></div><div class="col-md-6"><select class="form-select" id="reviewRating"><option value="5">★★★★★</option><option value="4">★★★★</option><option value="3">★★★</option><option value="2">★★</option><option value="1">★</option></select></div><div class="col-12"><textarea class="form-control" id="reviewText" rows="4" placeholder="Write your review..." required></textarea></div><div class="col-12"><button class="btn-gold" type="submit">Submit review</button><p id="reviewMessage" class="muted mt-2" aria-live="polite"></p></div></form></div></section></div>
+
+    <div id="page-faq" class="page hidden"><section class="page-banner compact-banner"><p class="eyebrow">HERE TO HELP</p><h1>Frequently asked <em>questions</em></h1></section><section class="container section-wrap faq-wrap">
+      <details class="faq-item"><summary>What kind of jewellery does Hania Jewels offer?</summary><p>Hania Jewels focuses on casual, everyday fashion jewellery such as pearls, beads, necklaces, bracelets, anklets, rings, earrings, chains and charms. We do not feature heavy bridal or wedding sets.</p></details>
+      <details class="faq-item"><summary>Can I customize every product?</summary><p>Customization is offered on selected necklaces, bracelets and anklets. Other products have a details view so you can review their description and price before adding them to your bag.</p></details>
+      <details class="faq-item"><summary>How do I choose my Karachi location?</summary><p>Select your area on the location screen before entering the shop. The previously selected area is pre-filled when you visit again, and you can change it before pressing Continue.</p></details>
+      <details class="faq-item"><summary>How can I place an order?</summary><p>Add items to your bag and continue to checkout. Enter your valid contact and delivery details, then continue to WhatsApp. Press Send in WhatsApp to submit your order to Hania Jewels.</p></details>
+      <details class="faq-item"><summary>Are online payments available?</summary><p>Online card payments are not available at the moment. Once your order is sent on WhatsApp, Hania Jewels will confirm the total, delivery charges and payment method with you.</p></details>
+      <details class="faq-item"><summary>How can I contact Hania Jewels?</summary><p>Contact details will be added once the store's official phone number, email and social links are provided.</p></details>
+    </section></div>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand-block">
+          <a class="brand footer-brand" href="#" data-page="home"><span class="brand-mark" aria-hidden="true">H<span>✧</span></span><span>HANIA <b>JEWELS</b></span></a>
+          <p>Everyday jewellery for your everyday moments. Discover delicate details, playful colours and pieces that feel like you.</p>
+          <span class="footer-signoff">A LITTLE SPARKLE, EVERY DAY.</span>
+        </div>
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="#" data-page="products">Shop all categories</a>
+          <a href="#" data-page="offers">Latest offers</a>
+          <a href="#" data-page="wishlist">Your wishlist</a>
+          <a href="#" data-page="cart">Shopping bag</a>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Care</h3>
+          <a href="#" data-page="faq">Frequently asked questions</a>
+          <a href="#" data-page="reviews">Customer reviews</a>
+          <span>Order support on WhatsApp</span>
+          <span>Delivery across selected Karachi areas</span>
+        </div>
+        <div class="footer-column footer-contact">
+          <h3>Our Store</h3>
+          <span><strong>Location</strong><br>Karachi, Pakistan</span>
+          <span><strong>Your selected area</strong><br><span id="footerLocation">Not selected</span></span>
+          <a href="https://wa.me/923392117615" target="_blank" rel="noopener">WhatsApp: +92 339 2117615</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Hania Jewels. All rights reserved.</span>
+        <span>Everyday fashion jewellery · Karachi, Pakistan</span>
+      </div>
+    </footer>
+  </div>
+
+  <div id="detailsModal" class="modal-shell hidden" role="dialog" aria-modal="true" aria-labelledby="detailsTitle">
+    <div class="hj-modal-backdrop" data-close-modal></div><div class="custom-modal details-modal"><button class="modal-close" data-close-modal aria-label="Close">×</button><div class="modal-product-image product-image-placeholder"><span>✧</span></div><div class="modal-product-info"><p class="eyebrow">PRODUCT DETAILS</p><h2 id="detailsTitle"></h2><p id="detailsPrice" class="product-price"></p><p id="detailsDescription" class="muted"></p><p id="detailsCategory" class="detail-category"></p><button id="detailsAddBtn" class="btn-gold w-100">Add to bag</button></div></div>
+  </div>
+  <div id="productModal" class="modal-shell hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="hj-modal-backdrop" data-close-modal></div><div class="custom-modal"><button class="modal-close" data-close-modal aria-label="Close">×</button><div class="modal-product-image product-image-placeholder"><span>✧</span></div><div class="modal-product-info"><p class="eyebrow">MAKE IT YOURS</p><h2 id="modalTitle"></h2><p id="modalPrice" class="product-price"></p><p id="modalDescription" class="muted"></p><form id="customForm"><input type="hidden" id="customProductId"><div class="row g-3"><div class="col-6"><label class="form-label" id="customColorLabel">Colour</label><select id="customColor" class="form-select" required><option value="">Choose colour</option><option>Gold</option><option>Silver</option><option>Rose Gold</option><option>Pearl White</option><option>Pastel Mix</option><option>Rainbow</option></select></div><div class="col-6"><label class="form-label" id="customSizeLabel">Size / Length</label><select id="customSize" class="form-select" required><option value="">Choose size</option><option>Standard</option><option>Small</option><option>Medium</option><option>Large</option><option>Adjustable</option><option>16 inches</option><option>18 inches</option><option>20 inches</option></select></div><div class="col-6"><label class="form-label">Quantity</label><input id="customQty" class="form-control" type="number" min="1" max="10" value="1" required></div></div><p class="custom-note">Choose your preferred options. Final availability can be confirmed by the store.</p><div class="modal-total">Estimated total <strong id="customTotal"></strong></div><button class="btn-gold w-100" type="submit">Add customized item to bag</button></form></div></div>
+  </div>
+  <div id="checkoutModal" class="modal-shell hidden" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="hj-modal-backdrop" data-close-modal></div><div class="checkout-modal"><button class="modal-close" data-close-modal aria-label="Close">×</button><p class="eyebrow">ALMOST YOURS</p><h2 id="checkoutTitle">Delivery details</h2><p class="muted">Enter your correct contact and delivery details. You will review and send your order through WhatsApp.</p>
+      <form id="checkoutForm" class="row g-3" novalidate>
+        <div class="col-12"><label class="form-label" for="checkoutName">Full name</label><input class="form-control" id="checkoutName" minlength="3" maxlength="60" required placeholder="Your full name"></div>
+        <div class="col-12"><label class="form-label" for="checkoutEmail">Email address</label><input class="form-control" id="checkoutEmail" type="email" required placeholder="name@gmail.com"></div>
+        <div class="col-12"><label class="form-label" for="checkoutPhone">Phone number</label><input class="form-control" id="checkoutPhone" type="tel" required placeholder="03XXXXXXXXX"></div>
+        <div class="col-12"><label class="form-label" for="checkoutAddress">Complete delivery address</label><textarea class="form-control" id="checkoutAddress" rows="3" minlength="12" required placeholder="House, street, area, Karachi"></textarea></div>
+        <div class="col-12"><p id="checkoutError" class="error-text" aria-live="polite"></p><p class="checkout-note">WhatsApp will open with your order details. Please press <b>Send</b> there to submit the order. Your bag will remain saved until you clear it.</p><button class="btn-gold w-100" type="submit">Continue to WhatsApp</button></div>
+      </form>
+    </div>
+  </div>
+  <div id="toast" class="toast-message" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="animations.js"></script>
+</body>
+</html>
